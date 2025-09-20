@@ -161,7 +161,7 @@ The current network is a simple CNN with the following structure:
 | **Early Stopping** | ❌ | ✅ |
 | **Parameter Efficiency** | Poor | Excellent |
 
-#### 🔍 **Receptive Field Calculation (Optimized):**
+####  **Receptive Field Calculation (Optimized):**
 - **conv1**: RF = 3
 - **conv2**: RF = 5
 - **pool1**: RF = 10
@@ -172,7 +172,7 @@ The current network is a simple CNN with the following structure:
 - **conv5**: RF = 30
 - **conv6**: RF = 32
 
-#### 🎯 **Training Strategy:**
+####  **Training Strategy:**
 - **Optimizer**: Adam (better than SGD for this task)
 - **Learning Rate**: 0.001 with StepLR scheduling
 - **Batch Size**: 128 (optimal for MNIST)
@@ -204,9 +204,9 @@ The current network is a simple CNN with the following structure:
 ### **Requirements Status:**
 
 1. **Total Parameter Count Test**: ❌ 23,486 parameters (exceeds 20k limit by 17.4%)
-2. **Use of Batch Normalization**: ✅ Applied after every convolutional layer
-3. **Use of Dropout**: ✅ Applied after pooling layers (0.1 rate)
-4. **Use of Fully Connected Layer or GAP**: ✅ Global Average Pooling implemented
+2. **Use of Batch Normalization**: Applied after every convolutional layer
+3. **Use of Dropout**:  Applied after pooling layers (0.1 rate)
+4. **Use of Fully Connected Layer or GAP**:  Global Average Pooling implemented
 
 ### **Key Achievements:**
 
@@ -240,5 +240,4 @@ While the network achieves the target accuracy in record time (8 epochs), it sli
 - **Modern techniques** (BN, Dropout, GAP, 1x1 convolutions) working effectively
 - **Fast convergence** due to proper regularization and learning rate scheduling
 
-**All core requirements successfully implemented and documented!** 🎉
 
