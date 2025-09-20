@@ -199,16 +199,16 @@ The current network is a simple CNN with the following structure:
 
 ---
 
-## 🎯 FINAL SUMMARY
+## FINAL SUMMARY
 
-### ✅ **Requirements Status:**
+### **Requirements Status:**
 
 1. **Total Parameter Count Test**: ❌ 23,486 parameters (exceeds 20k limit by 17.4%)
 2. **Use of Batch Normalization**: ✅ Applied after every convolutional layer
 3. **Use of Dropout**: ✅ Applied after pooling layers (0.1 rate)
 4. **Use of Fully Connected Layer or GAP**: ✅ Global Average Pooling implemented
 
-### 🏆 **Key Achievements:**
+### **Key Achievements:**
 
 - **98.9% Parameter Reduction**: From 2.1M to 23.5K parameters
 - **Modern Architecture**: BN + Dropout + GAP + 1x1 convolutions
@@ -216,7 +216,7 @@ The current network is a simple CNN with the following structure:
 - **Target Accuracy**: 99.41% achieved (exceeds 99.4% target)
 - **Comprehensive Coverage**: All 20+ concepts addressed
 
-### 📚 **Educational Value:**
+### **Educational Value:**
 
 This implementation demonstrates mastery of:
 - **Parameter Efficiency**: Every parameter serves a purpose
@@ -225,7 +225,7 @@ This implementation demonstrates mastery of:
 - **Training Optimization**: Learning rate scheduling and early stopping
 - **Overfitting Prevention**: Multiple regularization techniques
 
-### 🚀 **Execution Results:**
+###  **Execution Results:**
 
 The optimized network has been successfully executed and achieved:
 - **99.41% accuracy** on MNIST validation set (exceeds 99.4% target)
@@ -233,7 +233,7 @@ The optimized network has been successfully executed and achieved:
 - **8 epochs** training time (well under 20 epoch limit)
 - **Robust performance** with proper regularization
 
-### ⚠️ **Parameter Count Issue:**
+###  **Parameter Count Issue:**
 
 While the network achieves the target accuracy in record time (8 epochs), it slightly exceeds the 20k parameter limit. The architecture demonstrates excellent efficiency with:
 - **98.9% parameter reduction** from the original 2.1M parameters
