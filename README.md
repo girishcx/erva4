@@ -159,7 +159,7 @@ The current network is a simple CNN with the following structure:
 | **Global Average Pooling** | ❌ | ✅ |
 | **Learning Rate Scheduling** | ❌ | ✅ |
 | **Early Stopping** | ❌ | ✅ |
-| **Parameter Efficiency** | Poor | Excellent |
+| **Parameter Efficiency** | Poor | Good |
 
 ####  **Receptive Field Calculation (Optimized):**
 - **conv1**: RF = 3
