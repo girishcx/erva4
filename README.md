@@ -29,7 +29,7 @@ The current network is a simple CNN with the following structure:
 
 ### Design Choices Analysis
 
-#### ✅ **Covered Directly:**
+#### **Covered Directly:**
 1. **How many layers**: 7 convolutional layers + 2 pooling layers
 2. **MaxPooling**: Used twice (after conv2 and conv4)
 3. **3x3 Convolutions**: All convolutional layers use 3x3 kernels
@@ -38,7 +38,7 @@ The current network is a simple CNN with the following structure:
 6. **Learning Rate**: 0.01 with SGD optimizer
 7. **Kernels**: Progressive increase (32→64→128→256→512→1024→10)
 
-#### ❌ **Missing Critical Components:**
+####  **Missing Critical Components:**
 1. **Batch Normalization**: NOT USED
 2. **Dropout**: NOT USED
 3. **1x1 Convolutions**: NOT USED
@@ -46,7 +46,7 @@ The current network is a simple CNN with the following structure:
 5. **Transition Layers**: NOT USED
 6. **Fully Connected Layer or GAP**: NOT USED (direct conv to 10 classes)
 
-#### ⚠️ **Issues with Current Design:**
+#### **Issues with Current Design:**
 1. **Parameter Count**: ~2.1M parameters (WAY over 20k limit)
 2. **No Regularization**: No dropout or batch normalization
 3. **Inefficient Architecture**: Too many parameters for simple task
@@ -130,7 +130,7 @@ The current network is a simple CNN with the following structure:
 
 ### Key Design Choices Explained
 
-#### ✅ **Requirements Status:**
+####  **Requirements Status:**
 
 1. **Total Parameter Count**: 23,486 parameters (exceeds 20k limit by 17.4%)
 2. **Batch Normalization**: Applied after every convolutional layer
@@ -148,7 +148,7 @@ The current network is a simple CNN with the following structure:
 7. **Learning Rate Scheduling**: StepLR with gamma=0.1 every 7 epochs
 8. **Early Stopping**: Prevents overfitting with patience=5 epochs
 
-#### 📊 **Architecture Comparison:**
+####  **Architecture Comparison:**
 
 | Feature | Original Network | Optimized Network |
 |---------|------------------|-------------------|
